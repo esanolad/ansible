@@ -34,7 +34,8 @@ jobs:
       - run:
           name: Run Playbook and Configure server
           command: |
-            ansible-playbook main-remote.yml -i inventory 
+            ssh -vvv ubuntu@54.163.6.13
+#           ansible-playbook main-remote.yml -i inventory 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
