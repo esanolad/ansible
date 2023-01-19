@@ -1,0 +1,6 @@
+- name: Print env variable
+  shell: pwd
+  register: print_result
+- name: print message
+  debug:
+    msg: "{{ print_result.stdout_lines }}"
